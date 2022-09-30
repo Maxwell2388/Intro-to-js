@@ -1,64 +1,167 @@
-// normal function method//
 
-//  function myfunc(x1,x2,x3,x4){
-//    return x1 + x2 + x3 + x4 
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+// let text = "";
+// for (let i = 0; i < cars.length; i++)
+// {
+//     text += cars[i] + "<br>";
+// }
+//document.getElementById("p1").innerHTML = text;
+
+
+
+
+//FOR LOOP
+
+//Example 2
+
+// let text = "";
+// for (let i = 0; i < 5; i++) {
+//     text += "The number is  " + i + "<br>"
+// }
+// document.getElementById("p1").innerHTML = text;
+
+//Example 3
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i, len, text;
+// for ( i = 0, len = cars.length, text = ""; i < len; i++) {
+//     text += cars[i] + "<br>";
+// }
+
+// document.getElementById("p1").innerHTML = text;
+
+
+//Example 4
+
+// var i = 5;
+// for (var i = 0; i < 10; i++){
+
+// }
+ 
+// document.getElementById("p1").innerHTML = i;
+
+
+
+//For / in LOOP
+
+//Example 1
+
+// const person = { f_name: "John", L_name: "Doe", age: "25"};
+
+// let text = "";
+// for (let x in person){
+//     text += person [x] + " ";
+// }
+
+// document.getElementById("p1").innerHTML = text;
+
+
+//Example 2 over numbers
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// for (let x in numbers){
+//     text += numbers [x] + "<br>";
+// }
+
+// document.getElementById("p1").innerHTML = text;
+
+
+// const numbers = [45, 4, 9, 16, 25];
+
+// let text = "";
+// numbers.forEach(myFunction);
+
+
+// document.getElementById("p1").innerHTML = text;
+
+// function myFunction(value, index, Array){
+//     text += value + "<br>";
+// }
+
+
+////// For of Loop
+
+// const cars = ["BMW", "Volvo", "Mini"];
+// let text = "";
+// for ( let x of cars) {
+//     text += x + "<br>";
+// }
+
+// document.getElementById("p1").innerHTML = text;
+
+ 
+// Looping For of Loop over a stringe
+
+// let language = "Javascript";
+// let text = "";
+// for (let x of language) {
+//     text += x + "<br>";
+// }
+
+// document.getElementById("p1").innerHTML = text;
+
+
+
+// While loop
+
+// let text = "";
+// let i = 0;
+// while (i < 10){
+//      text += "<br> The number is "  + i;i++;
 //  }
-//  document.getElementById("p1").innerHTML = myfunc(2,4,6,8);
 
-// //Function as an expression //
-
-// const $func = function (x1,x2,x3,x4){return x1 + x2 + x3 + x4 };
-// document.getElementById("p2").innerHTML = $func(2,4,6,8)
-
-// //function constructor method //
-// const $func1 = new Function ("x1","x2","x3","x4","return x1 + x2 + x3 + x4")
-// document.getElementById("p3").innerHTML = $func1(2,4,6,8)
-
-// // Arrow functions //
-
-// const $func2 = (x1, x2, x3, x4) => x1 + x2 + x3 + x4 
-// document.getElementById("p4").innerHTML = $func2 (2,4,6,8)
+//  document.getElementById("p1").innerHTML = text;
 
 
-//Involking a function//
-//This keyword//
-let $obj = this
-document.getElementById("p5").innerHTML = $obj
 
-//within a function//
- function myfunc(){
-   return this
- }
+//Do while Loop
 
- document.getElementById("p6").innerHTML = myfunc()
+// let text = ""
+// let i = 0;
+// do {
+//      text += "<br> The number is "  + i;i++;
+//  }
 
- //within an object//
- const $people1 = {
-   $name1 : "John Doe",
-   $name2 : "Jane Doe",
-   $total : function(){
-     return this.$name1 + " & " +this.$name2
-   }
-  }
+//  while (i < 10);
 
-   document.getElementById("p8").innerHTML = $people1.$total()
+//  document.getElementById("p1").innerHTML = text;
 
-   const $name1 = {
-     $f_name : "Jane",
-     $l_name : "Doe"
-   }
+//For (Example)
 
-   const $name2 = {
-    $f_name : "Jonanthan",
-    $l_name : "Doe"
-  }
+// const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = "";
+// for (; cars[i];){
+//     text += cars[i] + "<br>"; i++;
+// }
 
-  const $name3 = {
-    $f_name : "Mary",
-    $l_name : "Doe"
-  }
+// document.getElementById("p1").innerHTML = text;
 
-  document.getElementById("p10").innerHTML = $people1.$total.call($name1)
+
+// While (Example)
+
+const cars = ["BMW", "volvo", "Saab", "Ford"];
+let i = 0;
+let text ="";
+
+while (cars[i]){
+    text += cars [i] + "<br>"; i++;
+}
+
+document.getElementById("p1").innerHTML = text;
+
+
+
+
+
+
+
+
+
 
 
 
