@@ -1,158 +1,102 @@
 
 
-// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+// const cars = ["Toyota", "BMW", "Volvo", "Camry"];
 
-// let text = "";
-// for (let i = 0; i < cars.length; i++)
-// {
-//     text += cars[i] + "<br>";
-// }
-//document.getElementById("p1").innerHTML = text;
+// document.getElementById("demo").innerHTML = cars;
 
 
+// const car = {type: "Toyota", model: "300vl", Color: "white"};
+// car.Color = "Red";
+// car.owner = "Maxwell";
 
+// document.getElementById("p1").innerHTML = "car owner is " + car.owner;
 
-//FOR LOOP
+// let x = myfunction(4,3);
+// document.getElementById("demo").innerHTML = x;
 
-//Example 2
-
-// let text = "";
-// for (let i = 0; i < 5; i++) {
-//     text += "The number is  " + i + "<br>"
-// }
-// document.getElementById("p1").innerHTML = text;
-
-//Example 3
-
-// const cars = ["BMW", "Volvo", "Saab", "Ford"];
-// let i, len, text;
-// for ( i = 0, len = cars.length, text = ""; i < len; i++) {
-//     text += cars[i] + "<br>";
+// function myfunction (a,b){
+//     return a * b;
 // }
 
-// document.getElementById("p1").innerHTML = text;
+// function displayDate(){
+//     document.getElementById("demo").innerHTML = Date;
+//}
 
-
-//Example 4
-
-// var i = 5;
-// for (var i = 0; i < 10; i++){
-
-// }
- 
-// document.getElementById("p1").innerHTML = i;
-
-
-
-//For / in LOOP
-
-//Example 1
-
-// const person = { f_name: "John", L_name: "Doe", age: "25"};
-
-// let text = "";
-// for (let x in person){
-//     text += person [x] + " ";
+// function displayDate(){
+//     document.getElementById("demo").innerHTML = Date;
 // }
 
-// document.getElementById("p1").innerHTML = text;
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
+// document.getElementById("demo").innerHTML = fruits;
 
-//Example 2 over numbers
-
-// const numbers = [45, 4, 9, 16, 25];
-
-// let text = "";
-// for (let x in numbers){
-//     text += numbers [x] + "<br>";
+// function myfunction(){
+//     fruits.sort();
 // }
 
-// document.getElementById("p1").innerHTML = text;
-
-
-// const numbers = [45, 4, 9, 16, 25];
-
-// let text = "";
-// numbers.forEach(myFunction);
-
-
-// document.getElementById("p1").innerHTML = text;
-
-// function myFunction(value, index, Array){
-//     text += value + "<br>";
+// let day;
+// switch (new Date().getDay){
+//     case 0:
+//          day1 = "Sunday";
+//         break;
+//         case 1:
+//          day = "Monday";
+//         break;
+//         case 2:
+//          day = "Tuesday";
+//         break;
+//         case 3:
+//          day = "Wednesday";
+//         break;
+//         case 4:
+//          day = "Thursday";
+//         break;
+//         case 5:
+//          day = "Friday";
+//         break;
+//         case 6:
+//          day = "Saturday";
 // }
 
+// document.getElementById("demo").innerHTML = "Today is " + day;
 
-////// For of Loop
 
-// const cars = ["BMW", "Volvo", "Mini"];
-// let text = "";
-// for ( let x of cars) {
-//     text += x + "<br>";
-// }
-
-// document.getElementById("p1").innerHTML = text;
-
- 
-// Looping For of Loop over a stringe
-
-// let language = "Javascript";
-// let text = "";
-// for (let x of language) {
-//     text += x + "<br>";
+// let text;
+// switch (new Date().getDay()) {
+//     case 6:
+//         text = "Today is Saturday";
+//         break;
+//         case 0:
+//             text = "Today is Sunday";
+//             break;
+//             default:
+//                 text = "Looking forward to the weekend";
 // }
 
 // document.getElementById("p1").innerHTML = text;
 
 
+//the break statement
+// let text =" ";
+// for ( let i = 0; i < 10; i++ ) {
+//     if ( i === 3) {break;}
+//     text += "The number is " + i + "<br>";
 
-// While loop
-
-// let text = "";
-// let i = 0;
-// while (i < 10){
-//      text += "<br> The number is "  + i;i++;
-//  }
-
-//  document.getElementById("p1").innerHTML = text;
-
-
-
-//Do while Loop
-
-// let text = ""
-// let i = 0;
-// do {
-//      text += "<br> The number is "  + i;i++;
-//  }
-
-//  while (i < 10);
-
-//  document.getElementById("p1").innerHTML = text;
-
-//For (Example)
-
-// const cars = ["BMW", "Volvo", "Saab", "Ford"];
-// let i = 0;
-// let text = "";
-// for (; cars[i];){
-//     text += cars[i] + "<br>"; i++;
 // }
 
 // document.getElementById("p1").innerHTML = text;
 
 
-// While (Example)
+let text =" ";
+for ( let i = 0; i < 10; i++ ) {
+    if ( i === 3) {continue;}
+    text += "The number is " + i + "<br>";
 
-const cars = ["BMW", "volvo", "Saab", "Ford"];
-let i = 0;
-let text ="";
-
-while (cars[i]){
-    text += cars [i] + "<br>"; i++;
 }
 
 document.getElementById("p1").innerHTML = text;
+
+
 
 
 
